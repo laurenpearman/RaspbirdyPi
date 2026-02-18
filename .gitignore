@@ -1,15 +1,17 @@
-# Data & models
+# Images and logs (use rsync for these)
 data/images/*
 data/logs/*
-models/*.tflite
-models/*.pt
-
-# Keep directory structure
 !data/images/.gitkeep
 !data/logs/.gitkeep
+
+# Models
+models/*.tflite
+models/*.pt
+models/*.onnx
 
 # OS / Python
 .DS_Store
 __pycache__/
 *.pyc
 venv/
+.env
