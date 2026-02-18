@@ -24,7 +24,7 @@ while True:
     thresh = cv2.threshold(diff, 25, 255, cv2.THRESH_BINARY)[1]
     motion_pixels = np.sum(thresh > 0)
     
-    if motion_pixels > 5000:
+    if motion_pixels > 8000:
         filename = f"motion_{int(time.time())}.jpg"
         picam2.capture_file(f"/home/lauren/RaspbirdyPi/data/images/{filename}")
         print("Motion detected:", filename)

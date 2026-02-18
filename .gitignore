@@ -1,4 +1,4 @@
-# Images and logs (use rsync for these)
+# Images and logs (rsync for these)
 data/images/*
 data/logs/*
 !data/images/.gitkeep
