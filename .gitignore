@@ -1,0 +1,15 @@
+# Data & models
+data/images/*
+data/logs/*
+models/*.tflite
+models/*.pt
+
+# Keep directory structure
+!data/images/.gitkeep
+!data/logs/.gitkeep
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+venv/
